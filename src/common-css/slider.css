@@ -1,0 +1,98 @@
+.slick-slider .slide {
+  padding: 0 10px;
+}
+
+.slick-slider .slick-dots {
+  bottom: -125px;
+}
+
+.slick-slider.service-fade-carousel .slick-dots {
+  bottom: -45px;
+}
+
+.slick-slider .slick-dots li button {
+  width: 10px;
+  height: 10px;
+  border: 1px solid var(--main-green);
+  border-radius: 50%;
+  padding: 0;
+  background-color: transparent;
+}
+
+.slick-slider .slick-dots li.slick-active button {
+  background-color: var(--main-green);
+}
+
+.slick-slider .slick-dots li button::before {
+  display: none;
+}
+
+.carousel-wrap {
+  padding-top: 135px;
+  padding-bottom: 220px;
+}
+
+.fade-carousel-wrap {
+  padding-bottom: 45px;
+}
+
+[data-slick-slider].overflow-visible .slick-list {
+  overflow: visible;
+}
+
+.slick-arrow {
+  width: 75px;
+  height: 35px;
+  background: url("../img/arrow_right.png") no-repeat;
+  bottom: -130px;
+  top: auto;
+  z-index: 1;
+}
+
+.slick-prev:hover,
+.slick-prev:focus,
+.slick-next:hover,
+.slick-next:focus {
+  background: url("../img/arrow_right.png") no-repeat;
+  background-size: contain;
+}
+
+.slick-arrow::before {
+  display: none;
+}
+
+.slick-arrow.slick-next {
+  right: 0;
+}
+
+.slick-arrow.slick-prev {
+  right: 155px;
+  left: auto;
+  transform: translateY(-50%) rotate(180deg);
+}
+
+.slick-arrow.slick-disabled {
+  opacity: 0.1;
+  cursor: not-allowed;
+}
+
+.centered-carousel {
+  max-width: 1920px;
+}
+
+.centered-carousel .project-slide img {
+  margin: auto;
+}
+.timber-carousel .project-slide img {
+  width: 100%;
+}
+
+.centered-carousel .project-slide {
+  opacity: 0.5;
+  transition: all 0.2s ease-in;
+}
+
+.centered-carousel .project-slide.slick-current,
+.centered-carousel .slick-track:hover .project-slide {
+  opacity: 1;
+}

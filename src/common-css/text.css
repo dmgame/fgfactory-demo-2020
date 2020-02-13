@@ -1,0 +1,55 @@
+:root {
+  --fz-text-big: 30px;
+  --lh-text-big: 1.6;
+  --fz-text-medium: 24px;
+  --lh-text-medium: 2;
+  --fx-text-small: 16px;
+  --lh-text-small: 2.25;
+  --fx-text-ex-small: 14px;
+  --lh-text-ex-small: 2.15;
+}
+
+.font-bold {
+  font-weight: 700;
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+.text-underline {
+  text-decoration: underline;
+}
+
+.article {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+}
+
+.article--big {
+  font-size: var(--fz-text-big);
+  line-height: var(--lh-text-big);
+}
+
+.article--medium {
+  font-size: var(--fz-text-medium);
+  line-height: var(--lh-text-medium);
+}
+
+.article--small {
+  font-size: var(--fz-text-small);
+  line-height: var(--lh-text-small);
+}
+
+.article--ex-small {
+  font-size: var(--fx-text-ex-small);
+  line-height: var(--lh-text-ex-small);
+}
+
+.copyright {
+  font-family: 'Roboto', sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 30px;
+  text-align: right;
+}

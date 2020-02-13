@@ -1,0 +1,23 @@
+[data-team-slider] .team-slider-item {
+  margin: 20px;
+}
+.team-carousel {
+  position: relative;
+}
+
+.team-carousel .slick-arrow {
+  background: transparent;
+  top: 0;
+  bottom: auto;
+  height: 100%;
+  width: 50%;
+  transform: none;
+}
+
+.team-carousel .slick-prev {
+  left: 0;
+}
+
+.team-carousel .slick-next {
+  right: 0;
+}

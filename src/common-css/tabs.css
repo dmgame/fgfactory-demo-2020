@@ -1,0 +1,138 @@
+.tab-content > .tab-pane {
+  display: none;
+  padding-top: 130px;
+  padding-bottom: 200px;
+}
+
+.tab-content > .active {
+  display: block;
+}
+
+.nav-tabs .nav-item {
+  flex-grow: 1;
+  max-width: 395px;
+}
+
+.nav-tabs .nav-item .nav-link {
+  padding: 0 15px 65px;
+  border-bottom: 5px solid transparent;
+  opacity: 0.4;
+  height: 100%;
+  width: 395px !important;
+  margin: auto;
+}
+
+.nav-tabs .nav-item .nav-link.active {
+  border-color: var(--main-green);
+  opacity: 1;
+  height: 100%;
+}
+
+.nav-tabs .nav-item .nav-link img {
+  margin-right: 40px;
+}
+
+.nav-tabs .nav-item .nav-link span {
+  font-family: "Roboto", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  width: 100px;
+  line-height: 1.5;
+}
+
+.nav-tabs .nav-item .nav-link span.large-width {
+  width: 170px;
+}
+
+.nav-tabs .nav-item .nav-link span.width-auto {
+  width: auto;
+}
+
+.nav-tabs.tabs-without-icons .nav-item .nav-link span {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 30px;
+}
+
+.nav-tabs.tabs-without-icons .nav-item .nav-link {
+  padding: 25px 65px;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  width: 265px !important;
+}
+
+.nav-tabs.tabs-without-icons .nav-item .nav-link.active {
+  border-color: transparent;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.18);
+}
+
+.nav-tabs.tabs-without-icons > div + div {
+  margin-left: 20px;
+}
+
+.nav-tabs.tabs-without-icons .nav-item .nav-link:hover {
+  border-color: rgba(10, 11, 15, 0.18);
+}
+
+.nav-tabs.tabs-without-icons .nav-item {
+  max-width: 265px;
+}
+
+.nav-tabs.tabs-without-icons .nav-item + .nav-item {
+  margin-left: 33px;
+}
+
+.contact-us-form-tabs .nav-tabs .nav-item .nav-link {
+  padding: 10px;
+  width: 265px !important;
+  height: 101px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(211, 211, 212, 0.4);
+  border-bottom-color: var(--main-green);
+  background-color: #fff;
+  border-radius: 5px 5px 0 0;
+  opacity: 1;
+}
+
+.contact-us-form-tabs .nav-tabs .nav-item .nav-link:hover {
+  opacity: 1;
+  /* border: 1px solid #0a0b0f;
+  border-bottom: none; */
+}
+
+.contact-us-form-tabs .nav-tabs .nav-item .nav-link span {
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 1;
+  opacity: 0.4;
+}
+
+.contact-us-form-tabs .nav-tabs .nav-item .nav-link:hover span,
+.contact-us-form-tabs .nav-tabs .nav-item .nav-link.active span {
+  color: #0a0b0f;
+  opacity: 1;
+}
+
+.contact-us-form-tabs .nav-tabs .nav-item .nav-link.active {
+  border-color: var(--main-green);
+  border-bottom-color: #fff;
+}
+
+.contact-us-form-tabs .nav-tabs .nav-item {
+  flex-grow: unset;
+}
+
+.contact-us-form-tabs .nav-tabs .nav-item + .nav-item {
+  margin-left: 30px;
+}
+
+.contact-us-form-tabs .tab-content > .tab-pane {
+  padding: 0;
+}
+
+.contact-us-form-tabs .tab-content {
+  margin-top: -1px;
+}

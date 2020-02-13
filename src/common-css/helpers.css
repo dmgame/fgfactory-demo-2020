@@ -1,0 +1,49 @@
+.border-bottom {
+  border-bottom: 1px solid #efefef;
+}
+
+.negative-margin {
+  margin-top: -120px;
+}
+
+.negative-margin.web-project-timber {
+  margin-top: -205px;
+}
+
+.negative-margin.web-project-orks,
+.negative-margin.web-project-playcrowd {
+  margin-top: -75px;
+}
+
+.centered-text {
+  max-width: 850px;
+  margin: auto;
+}
+
+.centered-text.w-icon {
+  position: relative;
+}
+
+.centered-text.w-icon .centered-text-icon {
+  position: absolute;
+  left: -182px;
+  top: -53px;
+}
+
+.negative-margin.fade-carousel-wrap {
+  margin-top: -80px;
+}
+
+.pos-static {
+  position: static !important;
+}
+.pos-fixed {
+  position: fixed !important;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.fade {
+  transition: opacity 0.15s linear;
+}
