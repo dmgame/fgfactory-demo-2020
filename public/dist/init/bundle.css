@@ -3545,6 +3545,13 @@ section {
   background: var(--main-gray);
 }
 
+.bg-violet-gradient {
+  background-image: linear-gradient(-135deg, #c63086 0%, #de465f 100%);
+}
+
+.bg-dark-green {
+  background-color: #013147 !important;
+}
 .border-bottom {
   border-bottom: 1px solid #efefef;
 }
@@ -4086,11 +4093,12 @@ header.is-fixed.show-header {
 .dropdown-container {
   position: absolute;
   left: 50%;
-  z-index: -1;
+  z-index: -9999;
   transform:  translateX(-50%);
   opacity: 0;
   perspective: 5000px;
   transition: all .2s ease-in-out;
+  visibility: hidden;
 }
 
 .dropdown-box {
@@ -4104,12 +4112,12 @@ header.is-fixed.show-header {
   min-width: 475px;
 }
 
-.dropdown-container::before {
+.dropdown-box::before {
   content: '';
   width: 11px;
   height: 11px;
   position: absolute;
-  top: 6px;
+  top: -10px;
   left: 50%;
   background-color: #fff;
   transform: rotate(-135deg) translateX(-50%);
@@ -4178,6 +4186,8 @@ header.is-fixed.show-header {
 .header-nav > ul > li:hover > .dropdown-container  {
   opacity: 1;
   padding-top: 15px;
+  z-index: -1;
+  visibility: visible;
 }
 
 .header-nav > ul > li:hover > .dropdown-container > .dropdown-box {
@@ -4190,7 +4200,16 @@ header.is-fixed.show-header {
   color: var(--main-white);
 }
 
-.bg-transparent.is-fixed.show-header .header-nav a {
+.header.bg-transparent .dropdown-box::before {
+  background-color: #000;
+}
+
+.header.is-fixed .dropdown-box::before {
+  background-color: #fff;
+}
+
+.bg-transparent.is-fixed.show-header .header-nav a,
+.header.bg-transparent .header-nav .dropdown-container a {
   color: #0a0b0f;
 }
 
@@ -4918,6 +4937,16 @@ header.is-fixed.show-header {
   }
 }
 
+.collapse:not(.show) {
+  display: none;
+}
+
+.collapsing {
+  position: relative;
+  height: 0;
+  overflow: hidden;
+  transition: height .35s ease;
+}
 .page-inner {
   padding: 157px 0 50px 0;
 }
@@ -5781,6 +5810,71 @@ textarea {
   position: relative;
 }
 
+.faq-section {
+  padding-bottom: 100px;
+}
+
+.faq-section .accordion {
+  max-width: 920px;
+  margin: 50px auto 0 auto;
+}
+
+.faq-section .card-header {
+  padding: 25px 60px 25px 107px;
+  border-radius: 5px 5px 0 0;
+  cursor: pointer;
+  background-color: #f2f7f5;
+  color: var(--main-green);
+  font-family: 'Roboto', sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  position: relative;
+}
+
+.faq-section .card-header.collapsed {
+  background-color: #fff;
+  color: var(--main-black);
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.18);
+  border-radius: 5px;
+}
+
+.faq-section .card-header::before {
+  content: "";
+  width: 11px;
+  height: 11px;
+  position: absolute;
+  background-color: var(--main-green);
+  border-radius: 2px;
+  top: 50%;
+  left: 60px;
+  transform: translateY(-50%) rotate(45deg);
+}
+
+.faq-section .card-header::after {
+  content: "-";
+  position: absolute;
+  right: 60px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--main-green);
+  font-family: "Roboto", sans-serif;
+  font-size: 36px;
+  font-weight: 700;
+}
+
+.faq-section .card-header.collapsed::after {
+  content: "+";
+  color: var(--main-black);
+}
+
+.faq-section .card + .card {
+  margin-top: 11px;
+}
+
+.faq-section .card-body {
+  padding: 15px 60px 40px;
+  background-color: #f2f7f5;
+}
 .project-preview-images {
   margin-top: 100px;
 }
@@ -6229,6 +6323,20 @@ textarea {
   grid-template-columns: repeat(3, minmax(100px, 1fr));
   grid-gap: 30px;
 }
+
+.tips-hacks-section {
+  padding-top: 90px;
+  padding-bottom: 100px;
+}
+
+.tips-hacks-section .title--section {
+  margin-bottom: 30px;
+}
+
+.tips-hacks-section .text-card {
+  margin: 0 10px;
+}
+
 
 .team-page-inner {
   padding-top: 175px;

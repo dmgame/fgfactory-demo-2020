@@ -17,6 +17,7 @@
     <title>Home</title>
   </head>
   <body>
+    <!-- -->
     <header class="header bg-transparent">
       <div class="container d-flex align-items-center" data-aos="fade-down">
         <a href="#" class="logo d-flex align-items-center">
@@ -28,16 +29,51 @@
             <title>fgf</title>
             <path d="M131.26,8.55a6.5,6.5,0,1,0,6.5,6.5A6.5,6.5,0,0,0,131.26,8.55Zm0,9.08a2.58,2.58,0,1,1,2.58-2.58A2.58,2.58,0,0,1,131.26,17.63Z" transform="translate(-58.34 -8.55)"/><polygon points="7.29 3.54 7.29 0.32 3.95 0.32 0 0.32 0 3.54 0 4.95 0 7.99 0 12.68 3.95 12.68 3.95 7.99 7.22 7.99 7.22 4.95 3.95 4.95 3.95 3.54 7.29 3.54"/><polygon points="31.27 3.54 31.27 0.32 23.98 0.32 23.98 12.68 27.93 12.68 27.93 7.99 31.2 7.99 31.2 4.95 27.93 4.95 27.93 3.54 31.27 3.54"/><path d="M79.55,14.08H74.82v2.57h1.11a2.58,2.58,0,1,1-.36-3.58l2.21-3.24a6.49,6.49,0,1,0,1.77,8.43Z" transform="translate(-58.34 -8.55)"/><path d="M111.81,16.58a3.14,3.14,0,0,1-2.36,1,2.73,2.73,0,0,1-2.85-2.58,2.73,2.73,0,0,1,2.85-2.58,3.35,3.35,0,0,1,2.26.9l2-3.53a7.64,7.64,0,0,0-4.28-1.28c-4,0-7.17,2.91-7.17,6.49s3.21,6.49,7.17,6.49A7.61,7.61,0,0,0,114,20Z" transform="translate(-58.34 -8.55)"/><path d="M96.88,8.87h-3L89.25,21.23h3.91l.38-1.1h3.73l.42,1.1h3.89Zm-2.32,8.52.86-2.18.82,2.18Z" transform="translate(-58.34 -8.55)"/><polygon points="65.27 0.32 62.98 0.32 58.95 0.32 56.66 0.32 56.66 3.54 58.95 3.54 58.95 12.68 62.98 12.68 62.98 3.54 65.27 3.54 65.27 0.32"/><path d="M148.51,17.12a3.92,3.92,0,0,0,1.75-3.47,4.79,4.79,0,0,0-2.81-4.27,7.73,7.73,0,0,0-3.1-.52h-3.92V21.24h3.92v-3l2,3h4.46Zm-4.16-5h.44a1.37,1.37,0,0,1,0,2.74h-.44Z" transform="translate(-58.34 -8.55)"/><polygon points="92.33 0.31 96.78 0.31 98.17 2.9 99.57 0.31 103.99 0.31 100.13 7.36 100.13 12.69 96.19 12.69 96.19 7.35 92.33 0.31"/>
           </svg>
-          <!-- <img src="public/img/logo-white.png" class="logo-img" alt="" />
-          <img src="public/img/logo-mob.png" class="logo-img--mobile" alt="" /> -->
         </a>
 
-        <nav class="header-nav ml-auto d-flex align-items-center">
-          <a href="">WORK</a>
-          <a href="">SERVICES</a>
-          <a href="">TEAM</a>
-          <a href="">BLOG</a>
-          <a href="">CONTACT</a>
+        <nav class="header-nav ml-auto ">
+          <ul class="d-flex align-items-center">
+            <li><a href="">WORK</a></li>
+            <li>
+              <a href="">
+                SERVICES
+                <i class="fas fa-angle-down"></i>
+              </a>
+
+              <div class="dropdown-container">
+                <div class="dropdown-box d-flex justify-content-between">
+                  <div class="list-wrap">
+                    <h3 class="list-title">Development</h3>
+                    <ul class="base-list">
+                      <li><a href="">Mobile</a></li>
+                      <li><a href="">Web</a></li>
+                      <li><a href="">Augmented Reality</a></li>
+                      <li><a href="">Multiplayer</a></li>
+                      <li><a href="">Hyper Casual</a></li>
+                      <li><a href="">Arcade</a></li>
+                      <li><a href="">Education & Kids</a></li>
+                      <li><a href="">Gambling</a></li>
+                    </ul>
+                  </div>
+                  <div class="list-wrap">
+                    <h3 class="list-title">Design</h3>
+                    <ul class="base-list">
+                      <li><a href="">Concept Art</a></li>
+                      <li><a href="">Casual Art</a></li>
+                      <li><a href="">3d Assets</a></li>
+                      <li><a href="">2d Animation</a></li>
+                      <li><a href="">3d Animation</a></li>
+                      <li><a href="">UX / UI</a></li>
+                      <li><a href="">Video Design</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li><a href="">TEAM</a></li>
+            <li><a href="">BLOG</a></li>
+            <li><a href="">CONTACT</a></li>
+          </ul>
         </nav>
 
         <div class="open-menu">
@@ -143,7 +179,7 @@
     <main>
       <div
         class="service-page-inner bg-black page-inner d-flex align-items-center border-bottom"
-       
+
       >
         <div class="container">
           <div class="centered-text">
@@ -258,7 +294,7 @@
                         <div class="process-flow-item-list">
                           <ul class="base-list base-list--w-dots color-gray">
                             <li><a href="">Overview and analysis</a></li>
-                            <li><a href="">Scope estimation</a></li>                          
+                            <li><a href="">Scope estimation</a></li>
                           </ul>
                         </div>
                       </div>
@@ -274,7 +310,7 @@
                         <div class="process-flow-item-list">
                           <ul class="base-list base-list--w-dots color-gray">
                             <li><a href="">Team setup</a></li>
-                            <li><a href="">Sprint planning</a></li>         
+                            <li><a href="">Sprint planning</a></li>
                           </ul>
                         </div>
                       </div>
@@ -290,8 +326,8 @@
                         <div class="process-flow-item-list">
                           <ul class="base-list base-list--w-dots color-gray">
                             <li><a href="">Concept art</a></li>
-                            <li><a href="">Design</a></li>   
-                            <li><a href="">Animation</a></li>  
+                            <li><a href="">Design</a></li>
+                            <li><a href="">Animation</a></li>
                             <li><a href="">Assets preparation</a></li>
                           </ul>
                         </div>
@@ -362,7 +398,7 @@
                         <div class="process-flow-item-list">
                           <ul class="base-list base-list--w-dots color-gray">
                             <li><a href="">Overview and analysis</a></li>
-                            <li><a href="">Scope estimation</a></li>                          
+                            <li><a href="">Scope estimation</a></li>
                           </ul>
                         </div>
                       </div>
@@ -378,7 +414,7 @@
                         <div class="process-flow-item-list">
                           <ul class="base-list base-list--w-dots color-gray">
                             <li><a href="">Team setup</a></li>
-                            <li><a href="">Sprint planning</a></li>         
+                            <li><a href="">Sprint planning</a></li>
                           </ul>
                         </div>
                       </div>
@@ -394,8 +430,8 @@
                         <div class="process-flow-item-list">
                           <ul class="base-list base-list--w-dots color-gray">
                             <li><a href="">Concept art</a></li>
-                            <li><a href="">Design</a></li>   
-                            <li><a href="">Animation</a></li>  
+                            <li><a href="">Design</a></li>
+                            <li><a href="">Animation</a></li>
                             <li><a href="">Assets preparation</a></li>
                           </ul>
                         </div>
@@ -450,7 +486,7 @@
                         <div class="process-flow-item-list">
                           <ul class="base-list base-list--w-dots color-gray">
                             <li><a href="">Overview and analysis</a></li>
-                            <li><a href="">Scope estimation</a></li>                          
+                            <li><a href="">Scope estimation</a></li>
                           </ul>
                         </div>
                       </div>
@@ -466,7 +502,7 @@
                         <div class="process-flow-item-list">
                           <ul class="base-list base-list--w-dots color-gray">
                             <li><a href="">Team setup</a></li>
-                            <li><a href="">Sprint planning</a></li>         
+                            <li><a href="">Sprint planning</a></li>
                           </ul>
                         </div>
                       </div>
@@ -482,8 +518,8 @@
                         <div class="process-flow-item-list">
                           <ul class="base-list base-list--w-dots color-gray">
                             <li><a href="">Concept art</a></li>
-                            <li><a href="">Design</a></li>   
-                            <li><a href="">Animation</a></li>  
+                            <li><a href="">Design</a></li>
+                            <li><a href="">Animation</a></li>
                             <li><a href="">Assets preparation</a></li>
                           </ul>
                         </div>
@@ -592,8 +628,8 @@
         <div class="container">
           <div class="centered-text" data-aos="fade-up">
             <p class="article article--medium">
-              We know that remote software development outsourcing can go terribly wrong. 
-              That’s why we developed a set of tools and algorithms to mitigate the risks and 
+              We know that remote software development outsourcing can go terribly wrong.
+              That’s why we developed a set of tools and algorithms to mitigate the risks and
               ensure that our Elites can deliver the best work every day.
             </p>
           </div>
@@ -602,7 +638,7 @@
         <!-- /.container -->
       </div>
       <!-- /.process-flow-wrap -->
-      <div class="process-flow-services" data-aos="fade-up">
+      <div class="process-flow-services border-bottom" data-aos="fade-up">
         <div class="container">
           <div class="d-flex justify-content-between">
             <div class="process-flow-services-item">
@@ -612,8 +648,8 @@
               </div>
               <!-- /.process-flow-services-item-header -->
               <p class="article article--small">
-                PM is included in all offers, we send. A-grade 
-                product management and software testing 
+                PM is included in all offers, we send. A-grade
+                product management and software testing
                 experience by your side.
               </p>
             </div>
@@ -625,9 +661,9 @@
               </div>
               <!-- /.process-flow-services-item-header -->
               <p class="article article--small">
-                No Blackbox! You are the captain. Through 
-                our management tools you can track 
-                progress of milestones, maintenance, and 
+                No Blackbox! You are the captain. Through
+                our management tools you can track
+                progress of milestones, maintenance, and
                 delivery throughout the project.
               </p>
             </div>
@@ -639,8 +675,8 @@
               </div>
               <!-- /.process-flow-services-item-header -->
               <p class="article article--small">
-                Pay only as we deliver upon project 
-                milestones. You have to sign off before we 
+                Pay only as we deliver upon project
+                milestones. You have to sign off before we
                 send you an invoice.
               </p>
             </div>
@@ -652,9 +688,9 @@
               </div>
               <!-- /.process-flow-services-item-header -->
               <p class="article article--small">
-                Every project comes with a delivery 
-                commitment. Whatever happens, we assure 
-                that the project will be executed and shipped 
+                Every project comes with a delivery
+                commitment. Whatever happens, we assure
+                that the project will be executed and shipped
                 as promised.
               </p>
             </div>
@@ -665,6 +701,44 @@
         <!-- /.container -->
       </div>
       <!-- /.process-flow-services -->
+      <div class="tips-hacks-section" data-aos="fade-up">
+        <div class="container">
+          <h3 class="title title--section title__gray" data-aos="fade-up" >
+            Tips and hacks
+          </h3>
+          <div class="carousel-wrap" data-aos="fade-up">
+            <div  class="carousel" data-slick-slider data-slick='{"slidesToShow": 4, "slidesToScroll": 1, "dots": true, "adaptiveHeight": true, "arrows": false, "infinite": false}'>
+              <div class="content-wrap">
+                <div class="text-card bg-violet-gradient ">
+                  <h4 class="text-card-title color-white">When a fixed price project is the right choise</h4>
+                  <span class="text-card-date color-white">July 18, 2019</span>
+                  <p class="text-card-description color-white">The different cores or statements of purpose
+                    cause us as designers to think about the overall
+                    design of the car differently in every single case.
+                    It’s exactly that way with game designers.</p>
+                  <a href="" class="arrow-link color-white" tabindex="0">Read more</a>
+                </div>
+              </div>
+              <!-- /slide-wrap -->
+              <div class="content-wrap">
+                <div class="text-card bg-dark-green">
+                  <h4 class="text-card-title color-green">Top 15 features besides the core gameplay</h4>
+                  <span class="text-card-date color-white">July 18, 2019</span>
+                  <p class="text-card-description color-white">The different cores or statements of purpose
+                    cause us as designers to think about the overall
+                    design of the car differently in every single case.
+                    It’s exactly that way with game designers.</p>
+                  <a href="" class="arrow-link color-white" tabindex="0">Read more</a>
+                </div>
+              </div>
+              <!-- /slide-wrap -->
+            </div>
+            <!-- /.carousel -->
+          </div>
+        </div>
+        <!-- /.container -->
+      </div>
+      <!-- /.tips-hacks-section -->
       <div class="call-to-action-section" data-aos="fade-up">
           <div class="container-fluid">
             <div class="call-to-action-wrap">

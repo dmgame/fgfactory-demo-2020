@@ -237,3 +237,17 @@
   grid-template-columns: repeat(3, minmax(100px, 1fr));
   grid-gap: 30px;
 }
+
+.tips-hacks-section {
+  padding-top: 90px;
+  padding-bottom: 100px;
+}
+
+.tips-hacks-section .title--section {
+  margin-bottom: 30px;
+}
+
+.tips-hacks-section .text-card {
+  margin: 0 10px;
+}
+

@@ -15,6 +15,7 @@ import '../common-css/tabs.css';
 import '../common-css/footer.css';
 import '../common-css/popover.css';
 import '../common-css/modal.css';
+import '../common-css/accordion.css';
 
 import '../pages-sections-css/page-inner.css';
 import '../pages-sections-css/project-description.css';
@@ -31,6 +32,7 @@ import '../pages-sections-css/team-slider.css';
 import '../pages-sections-css/contact-us.css';
 import '../pages-sections-css/character-ineractive.css';
 import '../pages-sections-css/video-block.css';
+import '../pages-sections-css/faq-section.css';
 
 import '../pages-css/web-project-bigbash.css';
 import '../pages-css/blog.css';
