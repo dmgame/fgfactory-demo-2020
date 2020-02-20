@@ -6337,7 +6337,18 @@ textarea {
   margin: 0 10px;
 }
 
+.advantages-dedicated-team {
+  padding-top: 170px;
+  padding-bottom: 100px;
+}
 
+.tips-to-hire {
+  padding-bottom: 200px;
+}
+
+.tips-slider {
+  margin: 0 -10px;
+}
 .team-page-inner {
   padding-top: 175px;
   padding-bottom: 135px;
@@ -6796,7 +6807,7 @@ textarea {
 }
 
 .team-setup-wrap {
-  padding-top: 175px;
+  padding-top: 100px;
 }
 
 .team-setup-wrap .contact-us-form-container {
