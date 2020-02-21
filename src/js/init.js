@@ -33,6 +33,7 @@ import '../pages-sections-css/contact-us.css';
 import '../pages-sections-css/character-ineractive.css';
 import '../pages-sections-css/video-block.css';
 import '../pages-sections-css/faq-section.css';
+import '../pages-sections-css/advantages-list.css';
 
 import '../pages-css/web-project-bigbash.css';
 import '../pages-css/blog.css';

@@ -243,6 +243,11 @@
   padding-bottom: 100px;
 }
 
+.tips-hacks-section  .carousel-wrap {
+  padding-top: 0;
+  padding-bottom: 100px;
+}
+
 .tips-hacks-section .title--section {
   margin-bottom: 30px;
 }
@@ -262,4 +267,25 @@
 
 .tips-slider {
   margin: 0 -10px;
+}
+
+.gambling-key-mechanics-section {
+  padding-top: 170px;
+}
+
+.gambling-service-tab-wrap .service-fade-carousel-wrap {
+  padding-bottom: 0;
+}
+
+.gambling-service-tab-wrap .carousel-wrap {
+  padding-bottom: 150px;
+}
+
+.other-gambling-mech-section {
+  padding-bottom: 95px;
+}
+
+.other-gambling-mech-section .services-category {
+  padding-bottom: 0;
+  padding-top: 140px;
 }
