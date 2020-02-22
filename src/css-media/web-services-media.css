@@ -484,6 +484,9 @@
   .carousel-service-preview-grid {
     grid-gap: 20px;
   }
+  .advantages-dedicated-team {
+    padding-top: 100px;
+  }
 }
 
 @media screen and (max-width: 575px) {
@@ -628,6 +631,9 @@
   }
   .advantages-shild-icon {
     width: 40px;
+  }
+  .advantages-dedicated-team .title {
+    line-height: 1;
   }
 }
 
