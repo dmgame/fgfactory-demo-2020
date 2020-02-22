@@ -4,6 +4,7 @@
   --btn-primary-text-color: #fff;
   --btn-primary-hover-text-color: var(--main-green);
   --btn-bordered: #fff;
+  --btn-bordered-transparent: transparent;
   --btn-bordered-hover: #fff;
   --btn-bordered-text-color: var(--main-green);
   --btn-bordered-border-color: var(--main-green);
@@ -47,4 +48,8 @@
   border-color: var(--btn-bordered-hover-border-color);
   background: var(--btn-bordered-hover);
   color: var(--btn-bordered-hover-text-color);
+}
+
+.btn-transparent {
+  background-color: var(--btn-bordered-transparent);
 }

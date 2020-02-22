@@ -7,7 +7,7 @@
 .base-list li {
   line-height: 1.2;
 }
-.base-list li:hover a {
+.base-list > li:hover > a {
   transition: all 0.1s ease-in;
   color: var(--main-green);
 }

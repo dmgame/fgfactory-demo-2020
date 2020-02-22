@@ -122,7 +122,7 @@ setImageBgFromDataUrl();
 
 // Poppover init
 $(function() {
-  $('[data-toggle="popover"]').popover({ 
+  $('[data-toggle="popover"]').popover({
     trigger: 'hover',
     animation: true
   });
@@ -349,7 +349,7 @@ function onGameIconClick(e) {
 }
 
 if (gameIcons && gamePreviewVideo) {
-  gameIcons.forEach(icon => icon.addEventListener('click', onGameIconClick));  
+  gameIcons.forEach(icon => icon.addEventListener('click', onGameIconClick));
 }
 
 // Partners images carousel
@@ -462,9 +462,9 @@ if (form && inputs.length) {
     e.preventDefault();
     onSubmit();
   });
-  
+
   inputs.forEach(el => el.addEventListener('focus', () => removeInputError(el)));
-  
+
   // Handlers
   function onSubmit() {
     const isValidForm = inputs.every(el => {
@@ -474,7 +474,7 @@ if (form && inputs.length) {
       }
       return isValidInput;
     });
-  
+
     if (!isValidForm) return;
     // Made any actions
   }
@@ -518,9 +518,7 @@ const processFlowCarouselSettings = {
 };
 
 $('.process-flow-list-carousel a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
-  console.dir(e.target, e.relatedTarget);
   const carouselID = e.target.hash;
-  console.log(carouselID)
   $(`${carouselID} .process-flow-list`).slick(processFlowCarouselSettings);
 })
 
@@ -565,3 +563,84 @@ $('.timber-carousel .service-fade-carousel').slick({
     },
   ]
 });
+
+// Mobile menu dropdown
+const dropdownItems = $('.header-nav--mobile .dropdown-item');
+
+dropdownItems.on('click', function (e) {
+  e.preventDefault();
+  $(this).toggleClass('opened');
+})
+
+// tips-hacks-section carousel
+$('.tips-hacks-section .carousel').slick({
+  dots: true,
+  infinite: false,
+  arrows: false,
+  slidesToShow: 4,
+  slidesToScroll: 1,
+  responsive: [
+    {
+      breakpoint: 1630,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 1,
+      }
+    },
+    {
+      breakpoint: 1199,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1,
+      }
+    },
+    {
+      breakpoint: 991,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+      }
+    },
+  ]
+})
+
+$('.tips-slider .carousel').slick({
+  dots: true,
+  infinite: false,
+  arrows: false,
+  slidesToShow: 4,
+  slidesToScroll: 1,
+  responsive: [
+    {
+      breakpoint: 1630,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 1,
+      }
+    },
+    {
+      breakpoint: 1199,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1,
+      }
+    },
+    {
+      breakpoint: 991,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+      }
+    },
+  ]
+})
+
+// Scroll to
+const scrollTriggers = $('[data-scroll-to]');
+
+scrollTriggers.on('click', function(e) {
+  e.preventDefault();
+  const scrollTargetSelector = $(this).attr('data-scroll-to');
+  const newPosition = $(scrollTargetSelector).offset();
+  $('html, body').stop().animate({ scrollTop: newPosition.top }, 700);
+})

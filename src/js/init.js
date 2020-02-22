@@ -16,6 +16,7 @@ import '../common-css/footer.css';
 import '../common-css/popover.css';
 import '../common-css/modal.css';
 import '../common-css/accordion.css';
+import '../common-css/breadcrumbs.css';
 
 import '../pages-sections-css/page-inner.css';
 import '../pages-sections-css/project-description.css';
