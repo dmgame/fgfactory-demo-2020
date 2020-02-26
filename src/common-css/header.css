@@ -102,6 +102,7 @@ header.is-fixed.show-header {
   transition: all 0.1s ease-in;
   line-height: 0.7;
   display: inline-block;
+  position: relative;
 }
 
 .header-nav .base-list a {
@@ -124,15 +125,23 @@ header.is-fixed.show-header {
   margin: 0;
 }
 
+.header-nav > ul > li + li {
+  margin-left: 27px;
+}
+
 .header-nav a > i {
   color: #a0a0a0;
   margin-left: 4px;
   transition: all 0.2s ease-in;
   line-height: 0.7;
+  position: absolute;
+  right: 9px;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
-.header-nav a + a {
-  margin-left: 27px;
+.header-nav > ul > li.dropdown-item > a {
+  padding-right: 25px;
 }
 
 .header-nav a:hover,
@@ -146,7 +155,7 @@ header.is-fixed.show-header {
 .header-nav a:hover > i,
 .header-nav > ul > li:hover > a > i  {
   color: #fff;
-  transform: rotate(180deg);
+  transform: translateY(-50%) rotate(180deg);
 }
 
 .header-nav > ul > li:hover > .dropdown-container  {
